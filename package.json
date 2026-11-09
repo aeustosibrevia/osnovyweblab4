@@ -1,0 +1,16 @@
+{
+  "name": "apartment-sales-crud",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack CRUD application for apartments for sale",
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "build": "npm run build --workspace frontend",
+    "start": "npm run start --workspace backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
